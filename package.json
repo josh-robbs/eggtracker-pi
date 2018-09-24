@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/josh-robbs/eggtracker-pi#readme",
   "dependencies": {
-    "node-fetch": "^2.2.0"
+    "node-fetch": "^2.2.0",
+    "node-raspistill": "0.0.15"
   }
 }

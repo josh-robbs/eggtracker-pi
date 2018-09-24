@@ -1,6 +1,15 @@
 const fetch = require("node-fetch")
+const Raspistill = require('node-raspistill').Raspistill;
+const raspistill = new Raspistill();
 
-console.log('taco test')
+raspistill.takePhoto()
+    .then((photo) => {
+        console.log('took photo', photo);
+    })
+    .catch((error) => {
+        console.error('something bad happened', error);
+});
+
 
 var body = JSON.stringify({  category: "test pi",
               brand: "raspbi pi",
