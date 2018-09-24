@@ -10,7 +10,6 @@ const camera = new Raspistill({
 });
 
 
-
 camera.takePhoto()
     .then((photo) => {
         console.log('took photo', photo);
