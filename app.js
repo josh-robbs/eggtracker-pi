@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 console.log('taco test')
 
 function getStuff(){
