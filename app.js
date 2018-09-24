@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require("node-fetch")
 
 console.log('taco test')
 
@@ -6,9 +6,7 @@ function getStuff(){
   console.log('comment inside fetch')
   fetch('https://eggtrackerapp.herokuapp.com/foodstuff',{
     method: 'POST',
-    headers: {
-      "content-type": "application/json"
-      },
+    headers: { "content-type": "application/json" },
     body: { "category": "test pi",
             "brand": "raspbi pi",
             "name": "taco test",
