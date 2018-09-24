@@ -1,6 +1,7 @@
 console.log('taco test')
 
 function getStuff(){
+  console.log('comment inside fetch')
   fetch('https://eggtrackerapp.herokuapp.com/foodstuff',{
     method: 'POST',
     headers: {
