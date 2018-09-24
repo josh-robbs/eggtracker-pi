@@ -1,3 +1,3 @@
 function taco() {
-  console.log('taco')
+  return 'taco'
 }
