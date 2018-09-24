@@ -1,8 +1,17 @@
 const fetch = require("node-fetch")
 const Raspistill = require('node-raspistill').Raspistill;
-const raspistill = new Raspistill();
 
-raspistill.takePhoto()
+const date = Date.now()
+
+const camera = new Raspistill({
+  fileName: 'latesteggphoto',
+  encoding: 'jpg',
+  outputDir: './pictures'
+});
+
+
+
+camera.takePhoto()
     .then((photo) => {
         console.log('took photo', photo);
     })
