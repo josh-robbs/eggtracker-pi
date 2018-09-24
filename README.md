@@ -1,0 +1,1 @@
+This is the code for the IoT (raspberry pi) to take pictures and push them to my database.
