@@ -1,3 +1,1 @@
-function taco() {
-  return 'taco'
-}
+console.log('taco')
