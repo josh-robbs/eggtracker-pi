@@ -14,7 +14,7 @@ function getStuff(){
             "quantity": 666,
             "location": "refrigerator" }
     })
-    // .then(res => res.status=201 ? this.setRedirect() : console.log('not working'))
+    .then(res => res.status=201 ? res.status : console.log('not working'))
 }
 
 getStuff()
